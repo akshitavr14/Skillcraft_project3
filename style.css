@@ -1,0 +1,88 @@
+body {
+  background: linear-gradient(to right, #ffecd2, #fcb69f);
+  font-family: 'Trebuchet MS', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  height: 100vh;
+  margin: 0;
+}
+
+.title {
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  font-size: 2rem;
+  color: #4b2e2e;
+  font-weight: bold;
+  margin-bottom: 10px;
+  letter-spacing: 1.5px;
+}
+
+.scoreboard {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #4d4d4d;
+  margin-bottom: 14px;
+}
+
+.mode-buttons {
+  margin-bottom: 18px;
+}
+
+button {
+  background-color: #fddede;
+  color: #333;
+  border: 2px solid #ffc0cb;
+  padding: 8px 16px;
+  border-radius: 12px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 0.88rem;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #ffe3e3;
+  transform: scale(1.05);
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.cell {
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s;
+  user-select: none;
+}
+
+.cell:hover {
+  background-color: #ffe9e9;
+  transform: scale(1.1);
+}
+
+.status {
+  font-size: 1rem;
+  color: #6c4b4b;
+  font-weight: 500;
+  background-color: #fff3f3;
+  padding: 8px 12px;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
